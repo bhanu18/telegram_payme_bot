@@ -22,7 +22,7 @@ bot.onText(/\/sendpic/, (msg) => {
 
     bot.sendPhoto(msg.chat.id,"https://www.somesite.com/image.jpg",{caption : "Here we go ! \nThis is just a caption "} );
     
-    });
+});
 
 // morgan
 app.use(morgan('dev'));
