@@ -1,1 +1,1 @@
-# telegram_payme_bot
+Telegram bot to split the bill between users in the group chat
