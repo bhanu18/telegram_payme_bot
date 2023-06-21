@@ -16,6 +16,22 @@ module.exports = {
             console.log(error);
         }
         
+    },
+
+    updates: async (req, res) => {
+        try {
+            const response = await Axios({
+                url: telegram_call,
+                method: 'POST',
+                data: {
+                    'data': res.body
+                }
+            });
+
+            res.send({ 'msg': "ok"})
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 
