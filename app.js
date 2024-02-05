@@ -30,9 +30,6 @@ app.use(morgan('dev'));
 // parse the updates to JSON
 app.use(express.json());
 
-//route
-app.use('/', require('./route/home.js'));
-
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
